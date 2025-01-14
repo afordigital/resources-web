@@ -1,0 +1,29 @@
+---
+import Resource from "./Resource.astro";
+---
+
+<div class="gallery-container">
+  <h2>Our powerful tools</h2>
+  <article class="gallery">
+    <Resource />
+    <Resource />
+    <Resource />
+  </article>
+</div>
+
+<style>
+  .gallery-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    width: 100%;
+  }
+</style>

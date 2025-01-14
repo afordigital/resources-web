@@ -1,11 +1,53 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Gallery from "../components/Gallery.astro";
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <div class="lines-bg"></div>
+  <div class="gradient-bg"></div>
+  <main>
+    <Header />
+    <Gallery />
+  </main>
 </Layout>
+
+<style>
+  main {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
+    max-width: 1000px;
+  }
+  .lines-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    background-image: linear-gradient(to right, #8080800a 1px, transparent 1px),
+      linear-gradient(to bottom, #8080800a 1px, transparent 1px);
+    background-size: 14px 24px;
+  }
+
+  .gradient-bg {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 9999px;
+    z-index: 10;
+    opacity: 0.2;
+    height: 310px;
+    width: 310px;
+    background: rgba(140, 14, 94, 0.733);
+    filter: blur(100px);
+  }
+</style>

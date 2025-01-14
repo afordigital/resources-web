@@ -1,0 +1,104 @@
+---
+
+---
+
+<main class="main-container">
+  <h1>Unleash Your Creative Vision</h1>
+  <p class="description">
+    Explore our suite of cutting-edge image generation tools. Transform ideas
+    into stunning visuals with just a few clicks.
+  </p>
+  <button>Start Creating</button>
+</main>
+
+<style is:global>
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+  }
+
+  button {
+    background: #0f172a;
+    color: white;
+    width: fit-content;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 200ms ease-out;
+  }
+
+  button:hover {
+    background: #1e293b;
+  }
+
+  h1 {
+    font-size: 56px;
+    font-weight: 800;
+    color: #0f172a;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-wrap: balance;
+  }
+
+  /*
+*/
+  #root,
+  #__next {
+    isolation: isolate;
+  }
+</style>
