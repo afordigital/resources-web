@@ -8,7 +8,20 @@
     Explore our suite of cutting-edge image generation tools. Transform ideas
     into stunning visuals with just a few clicks.
   </p>
-  <button>Start Creating</button>
+  <a
+    class="link-button"
+    target="_blank"
+    href="https://discord.com/invite/comuafor"
+  >
+    <span>Start Creating</span>
+    <img
+      src="/LinkIcon.svg"
+      alt="link icon"
+      class="link-icon"
+      width="16px"
+      height="16px"
+    />
+  </a>
 </main>
 
 <style is:global>
@@ -23,7 +36,7 @@
   }
 
   button {
-    background: #0f172a;
+    background: #020617;
     color: white;
     width: fit-content;
     padding: 8px 16px;
@@ -33,7 +46,30 @@
   }
 
   button:hover {
-    background: #1e293b;
+    background: #0f172a;
+  }
+
+  .link-button {
+    color: #0f172a;
+    text-underline-offset: 6px;
+    text-decoration: 1px solid dotted;
+    text-decoration-style: dotted;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .link-button:hover {
+    color: #020617;
+  }
+
+  .link-icon {
+    margin-left: 4px;
+    transition: translate 0.3s ease;
+  }
+
+  .link-button:hover .link-icon {
+    translate: 2px -2px;
   }
 
   h1 {
