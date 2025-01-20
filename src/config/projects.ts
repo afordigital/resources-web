@@ -26,4 +26,13 @@ export const projects = [
     alt: "Background Pattern Cover",
     link: "https://pattern-generator-woad.vercel.app",
   },
+  {
+    id: "project4",
+    title: " Contrast Color Checker",
+    description:
+      "Contrast Color Checker is an intuitive tool designed to help designers and developers ensure optimal color contrast for accessibility.",
+    src: "/projects/project-4.png",
+    alt: "Background Pattern Cover",
+    link: "https://color-contrast-checker-ten.vercel.app/",
+  },
 ];
