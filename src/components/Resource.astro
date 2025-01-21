@@ -7,7 +7,7 @@ const { title, description, src, alt, link } = Astro.props;
     <img src={src} alt={alt} />
   </a>
   <div class="resource-body">
-    <h1>{title}</h1>
+    <h1 class="project-title">{title}</h1>
     <p class="resource-description">{description}</p>
     <a class="link" href={link} target="_blank">Try it now</a>
   </div>
@@ -71,8 +71,9 @@ const { title, description, src, alt, link } = Astro.props;
     }
   }
 
-  h1 {
+  .project-title {
     font-size: 24px;
+    line-height: 2rem;
   }
 
   button {

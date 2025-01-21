@@ -8,15 +8,15 @@ import Layout from "../layouts/Layout.astro";
 <Layout>
   <div class="lines-bg"></div>
   <div class="gradient-bg"></div>
-  <main>
+  <section>
     <Header />
     <Gallery />
     <Footer />
-  </main>
+  </section>
 </Layout>
 
 <style>
-  main {
+  section {
     position: relative;
     z-index: 20;
     display: flex;
@@ -24,15 +24,30 @@ import Layout from "../layouts/Layout.astro";
     justify-content: center;
     align-items: center;
     gap: 72px;
-    max-width: 1100px;
-    margin-top: 200px;
+    height: 100%;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 75px;
   }
+
+  @media (width >= 768px) {
+    section {
+      margin-top: 100px;
+    }
+  }
+
+  @media (width >= 1024px) {
+    section {
+      margin-top: 200px;
+    }
+  }
+
   .lines-bg {
     position: absolute;
     inset: 0;
     z-index: 10;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: #ffffff;
     background-image: linear-gradient(to right, #8080800a 1px, transparent 1px),
       linear-gradient(to bottom, #8080800a 1px, transparent 1px);

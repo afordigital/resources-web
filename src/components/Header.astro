@@ -3,7 +3,7 @@
 ---
 
 <main class="main-container">
-  <h1>Unleash Your Creative Vision</h1>
+  <h1 class="title">Unleash Your Creative Vision</h1>
   <p class="description">
     Explore our suite of cutting-edge image generation tools. Transform ideas
     into stunning visuals with just a few clicks.
@@ -73,9 +73,23 @@
   }
 
   h1 {
-    font-size: 56px;
     font-weight: 800;
     color: #0f172a;
+    text-wrap: pretty;
+    line-height: 4rem;
+  }
+
+  .title {
+    font-size: clamp(2rem, 3rem, 4rem);
+    font-weight: 800;
+    color: #0f172a;
+    text-align: center;
+    text-wrap: balance;
+  }
+
+  .description {
+    text-align: center;
+    text-wrap: pretty;
   }
 
   *,
