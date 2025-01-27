@@ -8,7 +8,7 @@ A comprehensive collection of web development resources and projects to boost yo
 
 ## 📚 Table of Contents
 
-- [� Resources Web](#-resources-web)
+- [🌐 Resources Web](#-resources-web)
   - [📚 Table of Contents](#-table-of-contents)
   - [🌟 Features](#-features)
   - [🛠️ Projects](#️-projects)
