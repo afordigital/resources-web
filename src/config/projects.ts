@@ -28,11 +28,20 @@ export const projects = [
   },
   {
     id: "project4",
-    title: " Contrast Color Checker",
+    title: "Contrast Color Checker",
     description:
       "Contrast Color Checker is an intuitive tool designed to help designers and developers ensure optimal color contrast for accessibility.",
     src: "/projects/project-4.png",
     alt: "Background Pattern Cover",
     link: "https://color-contrast-checker-ten.vercel.app/",
+  },
+  {
+    id: "project5",
+    title: " Make a Readme",
+    description:
+      "Make a Readme is a simple tool that helps developers quickly generate well-structured README files for their projects.",
+    src: "/projects/project-5.png",
+    alt: "Background Pattern Cover",
+    link: "https://make-a-readme.vercel.app/",
   },
 ];
